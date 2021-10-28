@@ -1,0 +1,110 @@
+.blog {
+  padding-bottom: 50px;
+}
+
+.blog-title-main {
+  margin-bottom: 16px;
+  font-size: 26px;
+  line-height: 1.25;
+  letter-spacing: 0.5px;
+
+  @include adaptive-for-desktop {
+    margin-bottom: 20px;
+    font-size: 40px;
+  }
+}
+
+.posts-preview-list {
+}
+
+.posts-preview-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 312px;
+  padding: 16px;
+  background: var(--primary-light-bg-color);
+  box-shadow: var(--primary-shadow);
+  border-radius: 20px;
+
+  @include card-number-in-line(1, 8px);
+
+  @include adaptive-for-tablet {
+    @include card-number-in-line(2, 15px);
+  }
+
+  @include adaptive-for-desktop {
+    min-height: 368px;
+    padding: 20px;
+
+    @include card-number-in-line(3, 15px);
+  }
+}
+
+.posts-item-link {
+  display: block;
+}
+
+.posts-preview-img-wrap {
+  margin-bottom: 16px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.posts-preview-content {
+}
+
+.posts-preview-title {
+  margin-bottom: 0;
+  font-size: 18px;
+  line-height: 1.4;
+
+  @include adaptive-for-desktop {
+    font-size: 20px;
+  }
+}
+
+.post-preview-description {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.posts-preview-author-profile-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+  @include adaptive-for-desktop {
+    margin-bottom: 0;
+  }
+}
+
+.posts-preview-author-avatar {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  border-radius: 50%;
+
+  @include adaptive-for-desktop {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.posts-preview-author-name {
+  line-height: 1.467;
+  color: var(--secondary-dark-text-color);
+}
+
+.posts-main-info {
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 1.692;
+
+  @include adaptive-for-desktop {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}

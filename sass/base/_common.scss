@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.2;
+  font-family: 'Inter', sans-serif, apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue';
+  font-style: normal;
+  font-size: 15px;
+  font-weight: var(--font-weight-medium);
+  color: var(--primary-dark-text-color);
+  background-image: var(--primary-bg-image);
+  background-color: var(--primary-bg-color);
+}
+
+ul[class],
+ol[class] {
+  margin-top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin-top: 0;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  font-style: normal;
+  color: inherit;
+  outline: none;
+}
+
+.button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: inherit;
+  line-height: inherit;
+}
+
+.title {
+  font-weight: var(--font-weight-bold);
+  color: var(--primary-accent-dark-color);
+}

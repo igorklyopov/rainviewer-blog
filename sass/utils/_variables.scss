@@ -1,0 +1,28 @@
+:root {
+  //colors
+  --primary-accent-dark-color: #1c5edd;
+  --primary-accent-light-shade-dark-color: #497ee4;
+  --primary-dark-text-color: #7e91ad;
+  --secondary-dark-text-color: #000000;
+  --primary-light-bg-color: #f2f6ff;
+  --primary-bg-image: linear-gradient(
+    225deg,
+    rgba(177, 204, 255, 0.05) 5%,
+    rgba(177, 204, 255, 1) 100%
+  );
+  --primary-shadow: 1px -1px 20px rgba(28, 94, 221, 0.1),
+    -15px 15px 40px rgba(28, 94, 221, 0.1);
+
+  //typography
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+
+  //grid
+  --card-set-card-margin-desktop: 15px;
+  --card-set-card-margin-phone: 8px;
+}
+
+//breakpoints for adaptability
+$phone: 320px;
+$tablet: 768px;
+$desktop: 1440px;

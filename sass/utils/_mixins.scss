@@ -1,0 +1,51 @@
+/*Adds the required number of cards per line;
+works inside 'card-set-container': 
+display: flex;
+  flex-wrap: wrap;
+  @include card-set-margin($card-margin);
+*/
+
+@mixin card-number-in-line($card-number, $card-margin) {
+  flex-basis: calc(
+    (100% - 2 * #{$card-number} * #{$card-margin}) / #{$card-number}
+  );
+  margin: $card-margin;
+}
+
+/*
+Sets negative margin for a card-set-container
+*/
+@mixin card-set-margin($card-margin) {
+  margin: calc(-1 * #{$card-margin});
+}
+
+//Adds media rules for responsive layout
+@mixin adaptive-for-phone {
+  @media screen and (min-width: $phone) {
+    @content;
+  }
+}
+
+@mixin adaptive-for-tablet {
+  @media (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin adaptive-for-desktop {
+  @media (min-width: $desktop) {
+    @content;
+  }
+}
+
+@mixin adaptive-before-tablet {
+  @media screen and (max-width: $tablet - 1px) {
+    @content;
+  }
+}
+
+@mixin adaptive-before-desktop {
+  @media (max-width: $desktop - 1px) {
+    @content;
+  }
+}
